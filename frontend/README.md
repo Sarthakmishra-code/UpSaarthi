@@ -1,16 +1,100 @@
-# React + Vite
+# Frontend – Service & Hiring Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This folder contains the **frontend application** for a platform that connects **service seekers**, **service providers**, and **companies** in a Twitter-like social environment with paid consultations, projects, and hiring workflows.
 
-Currently, two official plugins are available:
+⚠️ **Project Status:**  
+This project is currently **under active development**. It is a **work in progress**, and many features, improvements, and architectural updates will be added gradually according to the product roadmap and execution plan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 Product Overview (Frontend Scope)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The platform supports three main user groups:
 
-## Expanding the ESLint configuration
+### 1. Service Seekers
+- Ask questions in different domains (tech, business, HR, accounting, etc.)
+- Post project or service requirements
+- Chat with service providers
+- Unlock paid chats or services after free limits
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Service Providers
+- Answer questions
+- Offer paid consultations
+- Provide freelance or contract services
+- Participate in hiring, resume screening, and interviews
+
+### 3. Companies / Recruiters
+- Post hiring requirements
+- Run candidate screening and interview workflows
+- Use distributed hiring support from verified professionals
+- Pay for ads, hiring tools, and services
+
+---
+
+## 🖥️ Technology Stack (Initial)
+
+Chosen to be **simple at start** and **scalable later**.
+
+- **Framework**: React
+- **Language**: JavaScript
+- **Styling**: Tailwind CSS
+- **Routing**: React Router
+- **State Management**: React Context (Redux later if needed)
+- **API Communication**: Fetch / Axios
+- **Authentication**: Token-based (handled by backend)
+- **Real-time Communication**: WebSockets (planned)
+- **Payments (UI)**: Razorpay / Stripe (future integration)
+
+---
+
+## 🎯 Key Features (MVP)
+
+- User authentication UI
+- Twitter-like public feed
+- Question & answer posts
+- Domain-based content visibility
+- User profiles and professional details
+- Limited free chat between users
+- Paid chat and service unlock (UI only)
+
+---
+
+## 🧩 Hiring & Screening (UI Scope)
+
+The frontend will support:
+- Job posting views
+- Resume upload and preview
+- Candidate shortlisting dashboards
+- Interview scheduling interfaces
+- Screening task & DSA round UI
+
+> Core hiring logic, payments, and verification are handled by backend services.
+
+---
+
+## 🔐 Authentication & Roles
+
+Frontend renders UI based on user roles:
+- Service Seeker
+- Service Provider
+- Company / Recruiter
+- Admin (internal)
+
+Authentication and role validation are managed by backend APIs.
+
+---
+
+## 💳 Monetization (Frontend Responsibility)
+
+- Subscription plan selection UI
+- Paid chat unlock screens
+- Project payment initiation UI
+- Hiring service payment UI
+
+---
+
+## 🚀 Running the Frontend
+
+```bash
+npm install
+npm run dev
