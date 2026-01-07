@@ -9,6 +9,7 @@ This repository contains only the backend services, built using Node.js, Express
 🏗️ Backend Architecture
 backend/
 ├── src/
+
 │   ├── models/           # Mongoose schemas
 │   ├── dao/              # Data Access Objects (DB abstraction)
 │   ├── services/         # Business logic layer
@@ -17,6 +18,8 @@ backend/
 │   ├── middleware/       # Auth, role checks, validation
 │   ├── utils/            # Helper utilities
 │   └── config/           # Database & app configuration
+
+
 ├── scripts/              # Admin & maintenance scripts
 ├── server.js             # Application entry point (root)
 ├── package.json
