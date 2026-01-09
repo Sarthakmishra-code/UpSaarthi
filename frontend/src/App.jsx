@@ -11,6 +11,9 @@ import AskQuestion from "./pages/AskQuestion";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ExpertProfile from "./components/experts/ExpertProfile";
+
+
 
 import ChatBot from "./components/chat/ChatBox";
 
@@ -37,6 +40,13 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route 
+            path="/experts/:id"
+            element={
+             <ProtectedRoute>
+                <ExpertProfile />
+              </ProtectedRoute>} />
+
 
           <Route
             path="/profile"
